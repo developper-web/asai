@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <header class="header1">
+
+      <div class="logo">
+
+        <i class="fa-solid fa-font-awesome">
+
+      </i>
+        <span>
+
+        T
+
+      </span>
+
+        <h1>
+
+        RAVEL
+
+      </h1>
+
+    </div>
+
+      <div class="right-section">
+
+        <a href="#Fried">
+
+         <i class="fa-solid fa-user-group"></i>
+
+         <span>
+
+
+         Fried
+         
+        </span>
+
+        </a>       
+
+        <a href="#services">
+
+         <i class="fa-solid fa-server"></i>
+
+         services  
+
+        </a>      
+
+        <a href="#TravelOffers">
+
+         <i class="fa-solid fa-bahai"></i>
+
+         Travel Offers   
+
+        </a>
+
+        <a href="#Bookaflight">
+
+            <i class="fas fa-globe"></i>
+
+            Book a flight   
+   
+           </a>
+        <div class="menu-container">
+            <div class="button">Memu
+                <span class="fa fa-bars"></span>
+            </div>
+            <ul>
+                <li><a href="#">About you</a></li>
+                <li><a href="#">connect us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+<section class="section1" id="Fried">
+   <div class="vido">
+    <video autoplay loop muted>
+        <source src="travel.mp4">
+    </video>
+   </div>
+    <div class="container">
+        <div class="card">
+            <div class="photo">
+                <img src="per.jpg">
+            </div>
+            <h2><span>Kira</span>_1313</h2>
+            <div class="btnmore">
+                <button>More</button>
+            </div>
+            <div class="socail">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="per1.jpg">
+            </div>
+            <h2><span>ELyon</span>_47</h2>
+            <div class="btnmore">
+                <button>More</button>
+            </div>
+            <div class="socail">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="WhatsApp Image 2022-05-01 at 01.49.40.jpeg">
+            </div>
+      <h2><span>Asia</span>_67</h2>
+      <div class="btnmore">
+        <button>More</button>
+    </div>
+    <div class="socail">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+        </div>
+    </div>
+</section>
+
+<section class="section2" id="services">
+    <h1 class="title">Service</h1>
+    <div class="service">
+           <div class="box">
+            <div class="top1">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h1>Mountain trip</h1>
+            </div>   
+            <div class="bottom">
+                <p>qsdvqsdvqsdvqsdvqsdvqsdv</p>
+                qsdvqsdvqsdvqsdvdsqvsdqvsdqv
+                <p>dsqvqsdvsqdvqsdvsqdvsdvsd</p>
+            </div>         
+           </div>
+           <div class="box">
+            <div class="top1">
+                <i class="fa-solid fa-tree"></i>
+                <h1>Camp</h1>
+            </div>   
+            <div class="bottom">
+                <p>qsdvqsdvqsdvqsdvqsdvqsdv</p>
+                qsdvqsdvqsdvqsdvdsqvsdqvsdqv
+                <p>dsqvqsdvsqdvqsdvsqdvsdvsd</p>
+            </div>         
+           </div>
+           <div class="box">
+            <div class="top1">
+                <i class="fa-solid fa-ship"></i>
+                <h1>On the beach</h1>
+            </div>   
+            <div class="bottom">
+                <p>qsdvqsdvqsdvqsdvqsdvqsdv</p>
+                qsdvqsdvqsdvqsdvdsqvsdqvsdqv
+                <p>dsqvqsdvsqdvqsdvsqdvsdvsd</p>
+            </div>         
+           </div>
+    </div>
+</section>
+<script>
+    //Expeditions
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+$('.button').click(function(){
+     if($(this).hasClass('expand')){
+        $('ul').slideUp(function(){
+            $('.button').removeClass('expand');
+            $('.fas').removeClass('.expand');
+        });
+     }
+     else{
+        $(this).addClass("expand");
+        setTimeout(function(){
+            $('.fas').addClass('expand');
+            $('ul').stop().slideDown()
+        },200);
+     }
+});
+        });
+    </script>
+</body>
+</html>

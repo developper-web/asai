@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is my site</title>
+    <link rel="stylesheet" href="des.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+   <header class="header1">
+
+    <h1><span>FB</span>count</h1>
+
+    </div>
+
+    <div class="right-section">
+
+    <a href="#">
+
+    <i class="fas fa-home"></i>
+
+    <span>Home</span>
+
+    </a>
+
+    <a href="#" class="profel">
+
+    <i class="fas fa-user-circle"></i>
+
+    <span>Profel</span>
+
+    </a>
+
+    <a href="#sign">
+
+    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+
+    <span>Sign Up</span>
+
+    </a>
+
+    </div>
+
+    </header>
+
+    <section class="section1">
+
+    <div class="img1">
+
+     <div class="img2">
+
+     <img src="WhatsApp Image 2022-05-01 at 01.49.40.jpeg">
+
+     </div>
+
+    </div>
+
+    <div class="btns">
+       <button onclick= location.href='index.html'>Start your journey</button>
+        <button class="admin">Admin <p class="alertyou">Designed by Asia</p></button>
+    </div>
+
+    </section>
+
+<section class="prof">
+
+</section>
+
+    <section class="section2" id="sign">
+
+        <div class="svgsign">
+
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+
+        </div>
+
+        <div class="alert">
+
+            <h1 class="close">
+
+                <i class="fas fa-close"></i>
+
+            </h1>
+
+        </div>
+
+        <form>
+
+            <h1>Sign Up</h1>
+
+            <div class="form">
+    
+                <form class="for">
+        
+                    <p>Username :</p>
+        
+                <input type="username" placeholder="username" class="username">
+    
+                <p>Password :</p>
+                  
+                <input type="password" placeholder="password" class="password">
+    
+            </form>
+            <input type="button" value="creat" class="btn">
+            </div>
+        </form>
+        </section>
+    <script>
+        let username = document.querySelector(".username");
+
+        let password = document.querySelector(".password");
+
+        let btn = document.querySelector(".btn");
+
+        let alertv = document.querySelector(".alert");
+
+        let profel = document.querySelector(".profel")
+
+        let profe = document.querySelector(".profel");
+
+        btn.addEventListener("click", ()=>{
+
+            if (username.value != '' && password.value != '') {
+
+                alertv.innerHTML = 'Welcome thanks for sign Up';
+
+                alertv.style. transform = 'translateX(250px)';
+            }
+            else{
+
+                alertv.innerHTML = 'information is false';
+                alertv.style. transform = 'translateX(250px)';
+            }
+
+        });
+
+    let clicksin = document.querySelector(".admin");
+    let alertyou = document.querySelector(".alertyou");
+    clicksin.addEventListener("click",()=>{
+        alertyou.style.display = "block";
+        alertyou.style.display = "flex";
+        alertyou.style.justifyContent =  'center';
+        alertyou.style.alignItems = 'center';
+    });
+    </script>
+</body>
+</html>
